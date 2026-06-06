@@ -11,8 +11,12 @@ int main() {
     printf("\n*************************************************************************\n");
 
     float a, b, c;
-    printf("\nDigite os tres lados do triangulo: ");
-    scanf("%f %f %f", &a, &b, &c);
+    printf("\nDigite o lado 1: ");
+    scanf("%f", &a);
+    printf("Digite o lado 2: ");
+    scanf("%f", &b);
+    printf("Digite o lado 3: ");
+    scanf("%f", &c);
 
     if (a == b && b == c)
         printf("\nTriangulo Equilatero\n");

@@ -11,8 +11,10 @@ int main() {
     printf("\n*************************************************************************\n");
 
     float a, b;
-    printf("\nDigite dois numeros: ");
-    scanf("%f %f", &a, &b);
+    printf("\nDigite o primeiro numero: ");
+    scanf("%f", &a);
+    printf("Digite o segundo numero: ");
+    scanf("%f", &b);
 
     if (a > b)
         printf("\nO maior numero e: %.2f\n", a);

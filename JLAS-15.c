@@ -13,11 +13,21 @@ int main() {
     float alt_cam, larg_cam, comp_cam;
     float alt_cx, larg_cx, comp_cx;
 
-    printf("\nDimensoes do caminhao (altura largura comprimento em metros): ");
-    scanf("%f %f %f", &alt_cam, &larg_cam, &comp_cam);
+    printf("\n--- Dimensoes do CAMINHAO (em metros) ---\n");
+    printf("Altura: ");
+    scanf("%f", &alt_cam);
+    printf("Largura: ");
+    scanf("%f", &larg_cam);
+    printf("Comprimento: ");
+    scanf("%f", &comp_cam);
 
-    printf("Dimensoes da caixa (altura largura comprimento em metros): ");
-    scanf("%f %f %f", &alt_cx, &larg_cx, &comp_cx);
+    printf("\n--- Dimensoes da CAIXA (em metros) ---\n");
+    printf("Altura: ");
+    scanf("%f", &alt_cx);
+    printf("Largura: ");
+    scanf("%f", &larg_cx);
+    printf("Comprimento: ");
+    scanf("%f", &comp_cx);
 
     int qtd = (int)(alt_cam / alt_cx) * (int)(larg_cam / larg_cx) * (int)(comp_cam / comp_cx);
     printf("\nCabem %d caixas no caminhao.\n", qtd);

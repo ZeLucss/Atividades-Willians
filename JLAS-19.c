@@ -11,8 +11,12 @@ int main() {
     printf("\n*************************************************************************\n");
 
     float a, b, c, tmp;
-    printf("\nDigite tres numeros: ");
-    scanf("%f %f %f", &a, &b, &c);
+    printf("\nDigite o primeiro numero: ");
+    scanf("%f", &a);
+    printf("Digite o segundo numero: ");
+    scanf("%f", &b);
+    printf("Digite o terceiro numero: ");
+    scanf("%f", &c);
 
     if (a > b) { tmp = a; a = b; b = tmp; }
     if (b > c) { tmp = b; b = c; c = tmp; }
